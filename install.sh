@@ -14,7 +14,7 @@ case "$response" in
     [yY][eE][sS]|[yY]) 
         echo "Creating desktop shortcuts..."
 
-        DIR="$HOME/.local/share/applications"
+        DIR="$HOME/Desktop/"
         mkdir -p "$DIR"
 
         cat > "$DIR/Build Bash.desktop" <<EOF
