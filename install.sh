@@ -1,9 +1,13 @@
 #!/bin/bash
 
 sudo mv src/main.py /usr/bin/redrose-maintain
+sudo chmod +x /usr/bin/redrose-maintain
 sudo mv src/coreutils.py /usr/bin/coreutils
+sudo chmod +x /usr/bin/coreutils
 sudo mv src/bash.py /usr/bin/build-bash
+sudo chmod +x /usr/bin/build-bash
 sudo mv src/curl.py /usr/bin/build-curl
+sudo chmod +x /usr/bin/build-curl
 
 read -r -p "Make desktop shortcuts for the commands? [y/N] " response
 case "$response" in
